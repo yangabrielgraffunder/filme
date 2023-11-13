@@ -1,0 +1,363 @@
+
+    
+
+    <!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+  
+  <body>
+    <header>
+      <div class="caixa">
+        <h1>
+        </h1>
+  
+        <nav>
+          <ul>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="desconto.html">Desconto</a></li>
+            <li><a href="satisfacao.html">Satisfação</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+
+
+
+
+   
+
+
+    <script>
+
+        function calcularDesconto() {
+            const valorCompra = parseFloat(document.getElementById('valorCompra').value);
+
+            let desconto = 0;
+
+            if (valorCompra > 200) {
+                desconto = 0.2; // 20%
+            } else if (valorCompra > 100) {
+                desconto = 0.1; // 10%
+            }
+            else if(valorCompra<=100){
+                desconto=0.05;
+
+            }
+
+            const valorDesconto = valorCompra * desconto;
+            document.getElementById('desconto').textContent = `R$ ${valorDesconto.toFixed(2)}`;
+        }
+    </script>
+    <div id="mensagem"></div>
+
+    <script>
+        function cadastrarUsuario() {
+            
+            var nome = document.getElementById("nome").value;
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("senha").value;
+
+            
+            if (nome === "" || email === "" || senha === "") {
+                document.getElementById("mensagem").innerHTML = "Por favor, preencha todos os campos.";
+                return;
+            }
+
+            
+            var usuario = {
+                nome: nome,
+                email: email,
+                senha: senha
+            };
+
+            
+            console.log("Usuário cadastrado: ", usuario);
+
+            
+            document.getElementById("cadastroForm").reset();
+            document.getElementById("mensagem").innerHTML =
+             "Cadastro realizado com sucesso!";
+        }
+    </script>
+</body>
+</html>
+</head>
+<body>
+    
+    </script>
+</body>
+</html>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    
+
+    <div id="mensagem"></div>
+
+    <script>
+        function cadastrarUsuario() {
+            
+            var nome = document.getElementById("nome").value;
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("senha").value;
+
+          
+            if (nome === "" || email === "" || senha === "") {
+                document.getElementById("mensagem").innerHTML = "Por favor, preencha todos os campos.";
+                return;
+            }
+
+            o
+            var usuario = {
+                nome: nome,
+                email: email,
+                senha: senha
+            };
+
+           
+            console.log("Usuário cadastrado: ", usuario);
+
+            
+            document.getElementById("cadastroForm").reset();
+            document.getElementById("mensagem").innerHTML =
+             "Cadastro realizado com sucesso!";
+        }
+    </script>
+</body>
+</html>
+</head>
+<body>
+    
+    </script>
+</body>
+</html>
+</head>
+<body>
+
+   
+
+   
+</body>
+</html>
+  <style>
+    .banner {
+      position: relative;
+      width: 150%;
+      height: 100px;
+      background-image: url('pp.jpg');
+    
+      background-size: cover;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      padding-top: 150px;
+    }
+  .caixa {
+  position: relative;
+  width: 2000px;
+  margin: 0 auto;
+  background-color: green;
+}
+nav li {
+  display: inline;
+  margin: 0 0 0 20px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: purple;
+  font-weight: bold;
+  font-size: 32px;
+  text-decoration: none;
+
+}
+nav a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+    
+
+    
+
+    .moving-text {
+      position: absolute;
+      top: 50%; 
+      left: -100%;
+      white-space: nowrap;
+      animation: moveText 10s linear infinite;
+      color: white;
+    }
+
+    @keyframes moveText {
+      0% {
+        left: -100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+
+    .filme {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      font-size: 18px;
+    }
+
+    .filme img {
+      width: 100px; 
+      margin-right: 10px;
+    }
+    #movendo {
+      position: absolute;
+      transition: transform 2s linear;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="moving-text">bem-vindo a melhor plataforma de filmes do mundo plano !</div>
+  </div>
+ 
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Página de Filmes</title>
+    <style>
+     
+      .moving-text {
+        position: absolute;
+        top: 50%; 
+        left: -100%;
+        white-space: nowrap;
+        animation: moveText 10s linear infinite;
+        color: white;
+      }
+  
+      @keyframes moveText {
+        0% {
+          left: -100%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+  
+      .filme {
+        display: inline-block;
+        align-items: center;
+        margin: 10px;
+        font-size: 18px;
+      }
+  
+      .filme img {
+        width: 100px; 
+        margin-right: 10px;
+      }
+      #movendo {
+        position: absolute;
+        transition: transform 2s linear;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="moving-text">bem-vindo a melhor plataforma de filmes do mundo plano !</div>
+    </div>
+   
+    <h2>Filmes Disponiveis </h2>
+    <div class="filme">
+      <img src="in.jpg" alt="Filme 1">
+      <span>Filme </span>
+      <span> Preço: R$ 60,00</span>
+    </div>
+    <div class="filme">
+      <img src="en.jpg" alt="Filme 1">
+      <span>Filme </span>
+      <span> Preço: R$ 60,00</span>
+    </div>
+    <div class="filme">
+      <img src="p.jpg" alt="Filme 1">
+      <span>Filme </span>
+      <span> Preço: R$ 60,00</span>
+    </div>
+    <div class="filme">
+      <img src="f.jpg" alt="Filme 1">
+      <span>Filme </span>
+      <span> Preço: R$ 60,00</span>
+    </div>
+    <div class="filme">
+      <img src="d.jpg" alt="Filme 2">
+      <span>Filme </span>
+      <span>Preço: R$ 65,00</span>
+    </div>
+    <div class="filme">
+      <img src="uu.jpg" alt="Filme 1">
+      <span>Filme </span>
+      <span> Preço: R$ 60,00</span>
+    </div> <div class="filme">
+      <img src="u.jpg" alt="Filme 1">
+      <span>Filme </span>
+      <span> Preço: R$ 60,00</span>
+    </div>
+  </div> <div class="filme">
+    <img src="oo.jpg" alt="Filme 1">
+    <span>Filme </span>
+    <span> Preço: R$ 60,00</span>
+  </div>
+   
+    <img id="movendo" src="fale.jpg" alt="Imagem em Movimento">
+    <script>
+      function moverImagemAleatoriamente() {
+        var imagem = document.getElementById('movendo');
+        var maxX = window.innerWidth - imagem.clientWidth;
+        var maxY = window.innerHeight - imagem.clientHeight;
+  
+        var novaPosX = Math.floor(Math.random() * maxX);
+        var novaPosY = Math.floor(Math.random() * maxY);
+  
+        imagem.style.transform = `translate(${novaPosX}px, ${novaPosY}px)`;
+      }
+  
+      setInterval(moverImagemAleatoriamente, 2000);
+    </script>
+  
+  </body>
+  </html>
+  </div>
+  <div class="filme">
+    <img src="am.jpg" alt="Filme 2">
+    <span>Filme </span>
+    <span>Preço: R$ 65,00</span>
+  </div>
+  <div class="filme">
+    <img src="w.jpg" alt="Filme 3">
+    <span>Filme </span>
+    <span>Preço: R$ 55,00</span>
+  </div>
+ 
+  <script>
+    function moverImagemAleatoriamente() {
+      var imagem = document.getElementById('movendo');
+      var maxX = window.innerWidth - imagem.clientWidth;
+      var maxY = window.innerHeight - imagem.clientHeight;
+
+      var novaPosX = Math.floor(Math.random() * maxX);
+      var novaPosY = Math.floor(Math.random() * maxY);
+
+      imagem.style.transform = `translate(${novaPosX}px, ${novaPosY}px)`;
+    }
+
+    setInterval(moverImagemAleatoriamente, 2000);
+  </script>
+   
+</body>
+</html>
